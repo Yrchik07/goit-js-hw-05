@@ -1,10 +1,6 @@
-const getUsersWithFriend = (users, friendName) =>{
-    return users.filter(user => user.friends).includes(users.friends === friendName);
-// return x;
+const getUsersWithFriend = (users, friendName) => {
+  return users.filter(user => user.friends.includes(friendName));
 }
-// console.log(x);
-// const booksByAuthor = books.filter(book => book.author === AUTHOR);
-
 
 const allUsers = [
     {
@@ -49,7 +45,7 @@ const allUsers = [
   //   }
   // ]
   
-//   console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+  console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
   // [
   //   {
   //     name: "Elma Head",
@@ -61,4 +57,4 @@ const allUsers = [
   //   }
   // ]
   
-//   console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+  console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
