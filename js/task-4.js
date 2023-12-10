@@ -1,10 +1,10 @@
 const getTotalBalanceByGender = (users, gender) =>{
-    const userGender = users.filter(user => user.gender === gender).add(user.balance++);
-    const userBal = userGender;
-    return userGender;
-}
-
-// .add = (a, b) => a.balance + b.balance
+  let sumBalance = 0;
+    const userGender = users.filter(user => user.gender === gender).forEach(element =>{
+      sumBalance += element.balance;
+    });
+    return sumBalance;  
+    };
 
 const allUsers = [
     {
